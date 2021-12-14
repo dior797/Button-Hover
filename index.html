@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click me button </title>
+</head>
+<style> 
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .body{
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+    }
+    .button{
+        width: 500px;
+        height: 100px;
+        background-color: cadetblue;
+        font-size: 90px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;   
+        border-radius: 50px;
+        transition: all;
+        transition: translate(-50%, -50%);
+        transition-duration: .5s;
+        animation:butt 5s infinite;
+        animation-name: butt;
+
+    }
+
+    .button:hover{
+        box-shadow:20px 10px pink ;
+        color: white;
+        text-shadow: black;
+    }
+    @keyframes butt{
+        from{left:100px;}
+        to {right: 200px;}
+
+
+    }
+
+</style>
+<body>      
+    
+    <div class="button">CLICK ME</div>
+   
+
+    
+</body>
+
+</html>
